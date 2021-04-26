@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/code-challenge-trivia-app/static/css/main.ade724c5.chunk.css",
+    "main.js": "/code-challenge-trivia-app/static/js/main.0a7bf659.chunk.js",
+    "main.js.map": "/code-challenge-trivia-app/static/js/main.0a7bf659.chunk.js.map",
+    "runtime-main.js": "/code-challenge-trivia-app/static/js/runtime-main.9c647233.js",
+    "runtime-main.js.map": "/code-challenge-trivia-app/static/js/runtime-main.9c647233.js.map",
+    "static/js/2.ecedc889.chunk.js": "/code-challenge-trivia-app/static/js/2.ecedc889.chunk.js",
+    "static/js/2.ecedc889.chunk.js.map": "/code-challenge-trivia-app/static/js/2.ecedc889.chunk.js.map",
+    "static/js/3.db21458b.chunk.js": "/code-challenge-trivia-app/static/js/3.db21458b.chunk.js",
+    "static/js/3.db21458b.chunk.js.map": "/code-challenge-trivia-app/static/js/3.db21458b.chunk.js.map",
+    "index.html": "/code-challenge-trivia-app/index.html",
+    "static/css/main.ade724c5.chunk.css.map": "/code-challenge-trivia-app/static/css/main.ade724c5.chunk.css.map",
+    "static/js/2.ecedc889.chunk.js.LICENSE.txt": "/code-challenge-trivia-app/static/js/2.ecedc889.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c647233.js",
+    "static/js/2.ecedc889.chunk.js",
+    "static/css/main.ade724c5.chunk.css",
+    "static/js/main.0a7bf659.chunk.js"
+  ]
+}
