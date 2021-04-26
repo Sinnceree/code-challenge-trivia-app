@@ -85,6 +85,12 @@ body {
       }
     }
 
+    .selected {
+      cursor: pointer;
+      color: #4e87c3;
+      background-color: #e8e9fe;
+    }
+
   }
 
   .purple-btn {
