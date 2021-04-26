@@ -13,7 +13,7 @@ const Quiz = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   const fetchQuestions = async () => {
-    const questionsRaw = await fetch("https://opentdb.com/api.php?amount=10&difficulty=hard&type=boolean");
+    const questionsRaw = await fetch("https://opentdb.com/api.php?amount=5&difficulty=hard&type=boolean");
     const questionsData = await questionsRaw.json();
     setQuestions(questionsData.results);
     setLoading(false);
@@ -47,6 +47,18 @@ const Quiz = () => {
     setSelectedAnswer(null);
   }
 
+  const handlePlayAgain = () => {
+    // Lets reset all the game state
+    setLoading(true)
+    setSelectedAnswer(null);
+    setQuestions([]);
+    setQuestionIndex(0);
+    setCompleted(false);
+
+    // Now lets fetch new questions
+    fetchQuestions();
+  }
+
   // Fetch questions on component mount.
   useEffect(() => {
     fetchQuestions();
@@ -62,7 +74,7 @@ const Quiz = () => {
         </React.Fragment>
       }
 
-      {completed && !loading && <CompletedBox questions={questions} />}
+      {completed && !loading && <CompletedBox questions={questions} handlePlayAgain={handlePlayAgain} />}
 
     </div>
   );

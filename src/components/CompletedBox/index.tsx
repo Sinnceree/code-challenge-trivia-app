@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { QuestionObject } from "../../interfaces";
+import BorderedButton from "../BorderedButton";
 
 interface CompletedBoxProps {
   questions: QuestionObject[];
+  handlePlayAgain: () => void;
 }
 
-const CompletedBox = ({ questions }: CompletedBoxProps) => {
+const CompletedBox = ({ questions, handlePlayAgain }: CompletedBoxProps) => {
   const [score, setScore] = useState<number>(0);
 
   const calculateScore = () => {
     let correct = 0;
 
     for (const question of questions) {
-      console.log(question)
       if (question.correct_answer === question.user_answer) {
         correct++;
       }
@@ -37,6 +38,7 @@ const CompletedBox = ({ questions }: CompletedBoxProps) => {
           </li>
         ))}
       </ul>
+      <BorderedButton text="Play Again!" onClick={handlePlayAgain} />
     </section>
   );
 }
