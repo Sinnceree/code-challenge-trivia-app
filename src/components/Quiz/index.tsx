@@ -27,7 +27,7 @@ const Quiz = () => {
   const handleNextQuestion = () => {
     // First let's check if the user answered this question or not.
     if (!selectedAnswer) {
-      return console.log("Please select a answer.")
+      return alert("Please select a answer!")
     }
 
     // Lets duplicate the arr temp so we can mutate it
