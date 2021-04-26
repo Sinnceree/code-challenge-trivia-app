@@ -13,7 +13,7 @@ const Quiz = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   const fetchQuestions = async () => {
-    const questionsRaw = await fetch("https://opentdb.com/api.php?amount=5&difficulty=hard&type=boolean");
+    const questionsRaw = await fetch("https://opentdb.com/api.php?amount=10&difficulty=hard&type=boolean");
     const questionsData = await questionsRaw.json();
     setQuestions(questionsData.results);
     setLoading(false);
@@ -68,7 +68,7 @@ const Quiz = () => {
     <div className="quiz-wrapper">
       {!completed && !loading &&
         <React.Fragment>
-          <QuestionBox question={questions[currentQuestionIndex].question} currentIndex={currentQuestionIndex + 1} />
+          <QuestionBox question={questions[currentQuestionIndex].question} currentIndex={currentQuestionIndex + 1} maxQuestions={questions.length} />
           <AnswersBox handleSelectedAnswer={handleSelectedAnswer} selectedAnswer={selectedAnswer} />
           <BorderedButton text="Next Question" onClick={handleNextQuestion} />
         </React.Fragment>

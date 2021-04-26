@@ -28,7 +28,7 @@ const CompletedBox = ({ questions, handlePlayAgain }: CompletedBoxProps) => {
 
   return (
     <section className="completed-quiz">
-      <div className="score">You Scored {score}/10</div>
+      <div className="score">You Scored {score}/{questions.length}</div>
       <ul className="answers">
 
         {questions && questions.map((question) => (
