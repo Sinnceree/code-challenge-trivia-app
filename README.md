@@ -3,6 +3,8 @@
 This is a trivia website application, that was created using Typescript and ReactJS library.
 I also use opentdb for fetching quizes questions and answers.
 
+Live Preview: [Click Here](https://voxze.github.io/code-challenge-trivia-app/)
+
 ## How To Run Locally?
 
 1) Clone/Fork repo locally
