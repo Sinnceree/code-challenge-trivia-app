@@ -17,6 +17,7 @@ body {
 .quiz-wrapper {
   width: 50%;
   display: flex;
+  align-items: center;
   flex-direction: column;
 
   .question {
@@ -85,4 +86,27 @@ body {
     }
 
   }
+
+  .purple-btn {
+    display: flex;
+    color: #fff;
+    border: none;
+    width: 150px;
+    font-size: 13px;
+    margin-top: 2rem;
+    padding: 14px 0;
+    font-weight: 600;
+    border-radius: 50px;
+    align-items: center;
+    transition: ease-in 0.1s;
+    justify-content: center;
+    background-color: #717aef;
+    box-shadow: 1px 4px 11px 1px #9dabef8e;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+    }
+  }
+
 }
