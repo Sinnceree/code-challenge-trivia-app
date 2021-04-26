@@ -9,7 +9,7 @@ const QuestionBox = ({ question, currentIndex }: QuestionBoxProps) => {
   return (
     <section className="question">
       <div className="completed">Question {currentIndex}/10</div>
-      <h1 className="text">{question}</h1>
+      <h1 className="text" dangerouslySetInnerHTML={{__html: question }} />
     </section>
   );
 }
