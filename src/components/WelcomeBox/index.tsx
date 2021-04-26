@@ -9,7 +9,7 @@ const WelcomeBox = ({ setQuizStarted }: WelcomeBoxProps) => {
   return (
     <div className="start-quiz">
       <h1 className="title">Welcome to Trivia Challenge!</h1>
-      <p className="desc">{`You will be presented with 10 True or False questions. \n Do you think you can score 100%?`}</p>
+      <p className="desc">You will be presented with 10 True or False questions. <br/> Do you think you can score 100%?</p>
       <BorderedButton text="Start Quiz" onClick={() => setQuizStarted(true)} />
     </div>
   );
